@@ -1085,7 +1085,7 @@ int CwMcuSensor::readEvents(sensors_event_t* data, int count) {
             uint64_t event_cpu_time;
 
             if (event_mcu_time < last_mcu_timestamp[id]) {
-                ALOGE("Do syncronization due to wrong delta mcu_timestamp\n");
+                ALOGE("Do synchronization due to wrong delta mcu_timestamp\n");
                 ALOGE("curr_ts = %" PRIu64 " ns, last_ts = %" PRIu64 " ns",
                     event_mcu_time, last_mcu_timestamp[id]);
                 sync_time_thread_in_class();

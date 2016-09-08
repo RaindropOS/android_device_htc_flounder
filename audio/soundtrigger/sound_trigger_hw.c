@@ -204,7 +204,7 @@ static char *sound_trigger_event_alloc(struct flounder_sound_trigger_device *
     event->phrase_extras[0].num_levels = 1;
     event->phrase_extras[0].levels[0].level = 100;
     event->phrase_extras[0].levels[0].user_id = 0;
-    // Signify that all the data is comming through streaming, not through the
+    // Signify that all the data is coming through streaming, not through the
     // buffer.
     event->common.capture_available = true;
 
